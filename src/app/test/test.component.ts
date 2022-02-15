@@ -32,15 +32,7 @@ export class TestComponent implements OnInit {
     })
   }
 
-
-  findPaginnation() {
-    this.userService.getAllRecruitment((this.indexPagination * 5) - 5).subscribe(data => {
-      // @ts-ignore
-      this.recruitments = data.content;
-    })
-  }
-
-  indexPaginationChage(value: number) {
+  indexPaginationChage(value: any) {
     this.indexPagination = value;
   }
 
