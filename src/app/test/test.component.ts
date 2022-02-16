@@ -45,7 +45,7 @@ export class TestComponent implements OnInit {
     let totalPage = this.indexPagination;
     totalPage += 1;
     let b = this.listRecruitmentsNotPagination.length
-    var max = 0
+    let max = 0
     for (let i = 0; i < b; i++) {
       if (i % 5 == 0) {
         if (i > max) {
@@ -76,7 +76,7 @@ export class TestComponent implements OnInit {
   }
   lastPage() {
     let b = this.listRecruitmentsNotPagination.length
-    var max = 0
+    let max = 0
     for (let i = 0; i < b; i++) {
       if (i % 5 == 0) {
         if (i > max) {
